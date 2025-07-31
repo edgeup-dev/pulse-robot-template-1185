@@ -14,7 +14,7 @@ const HumanIntuitionSection = () => {
             </div>
             <h2 className="section-title mb-6">Beyond algorithms to true understanding</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Atlas goes beyond programmed responses to develop contextual awareness and
+              ZaryahX goes beyond programmed responses to develop contextual awareness and
               adaptive learning patterns that mirror human intuition. This enables natural
               interactions that feel like working with a human colleague rather than a machine.
             </p>

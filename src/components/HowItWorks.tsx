@@ -55,19 +55,19 @@ const HowItWorks = () => {
     {
       number: "02",
       title: "Personalization",
-      description: "We'll work with you to customize Atlas to your specific needs and preferences.",
+      description: "We'll work with you to customize ZaryahX to your specific needs and preferences.",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
     },
     {
       number: "03",
       title: "Integration",
-      description: "Atlas arrives at your location and is integrated into your living or working environment.",
+      description: "ZaryahX arrives at your location and is integrated into your living or working environment.",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
     },
     {
       number: "04",
       title: "Adaptation",
-      description: "Through daily interaction, Atlas learns and adapts to your routines, preferences, and needs.",
+      description: "Through daily interaction, ZaryahX learns and adapts to your routines, preferences, and needs.",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
     }
   ];
@@ -118,7 +118,7 @@ const HowItWorks = () => {
           <div className="pulse-chip mx-auto mb-4">
             <span>Process</span>
           </div>
-          <h2 className="section-title mb-4">How Atlas Integrates Into Your Life</h2>
+          <h2 className="section-title mb-4">How ZaryahX Integrates Into Your Life</h2>
           <p className="section-subtitle mx-auto">
             A seamless four-step process from request to full integration.
           </p>
