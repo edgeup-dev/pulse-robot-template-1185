@@ -49,7 +49,7 @@ const CTA = () => {
           </h2>
           
           <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
-            We're accepting a limited number of early adopters. Submit your application today to secure your place in the future of robotics.
+            We're accepting a limited number of early adopters. Submit your application today to secure your place in the future of decentralized AI infrastructure.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">

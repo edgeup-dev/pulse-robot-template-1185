@@ -16,13 +16,35 @@ const SpecsSection = () => {
           <div className="flex-1 h-[1px] bg-gray-300"></div>
         </div>
         
-        {/* Main content with text mask image - responsive text sizing */}
         <div className="max-w-5xl pl-4 sm:pl-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display leading-tight mb-8 sm:mb-12">
             <span className="block bg-clip-text text-transparent bg-[url('/text-mask-image.jpg')] bg-cover bg-center">
-              ZaryahX works with your team, not instead of it. By handling repetitive tasks, improving safety conditions, and learning from every interaction, ZaryahX helps humans focus on what they do best: create, solve, and innovate.
+              Powering the Future — At Scale
             </span>
           </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-pulse-500 mb-2">100B</div>
+              <div className="text-gray-600">AI Parameters Trained</div>
+              <div className="text-sm text-gray-500 mt-1">Powered by Proof-of-AI (PoAI) infrastructure</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-pulse-500 mb-2">100%</div>
+              <div className="text-gray-600">Quantum Encrypted & Federated</div>
+              <div className="text-sm text-gray-500 mt-1">Built with DFDM architecture for full decentralization</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-pulse-500 mb-2">95%+</div>
+              <div className="text-gray-600">Device Compatibility</div>
+              <div className="text-sm text-gray-500 mt-1">Optimized for CPUs, GPUs, ASICs & edge devices</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-pulse-500 mb-2">∞</div>
+              <div className="text-gray-600">Scalable autonomous Agents</div>
+              <div className="text-sm text-gray-500 mt-1">Ecosystem-ready for AI-native deployment and growth</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
