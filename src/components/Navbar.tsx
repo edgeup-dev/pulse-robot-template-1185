@@ -59,6 +59,7 @@ const Navbar = () => {
             alt="ZaryahX" 
             className="h-9 sm:h-10" 
           />
+          <span className="text-xl font-semibold text-gray-900">ZaryahX</span>
         </a>
 
         {/* Desktop Navigation */}
