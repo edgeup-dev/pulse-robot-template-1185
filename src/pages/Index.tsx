@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MiningSection from "@/components/MiningSection";
 import StakingSection from "@/components/StakingSection";
+import BuyDNZSection from "@/components/BuyDNZSection";
 import VisionSection from "@/components/VisionSection";
 import SpecsSection from "@/components/SpecsSection";
 import Features from "@/components/Features";
@@ -66,6 +67,7 @@ const Index = () => {
         <Hero />
         <MiningSection />
         <StakingSection />
+        <BuyDNZSection />
         <VisionSection />
         <SpecsSection />
         <Features />
