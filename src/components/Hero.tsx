@@ -149,7 +149,11 @@ const Hero = () => {
           <div className="w-full lg:w-1/2 relative mt-6 lg:mt-0">
             <div className="relative z-10 animate-fade-in" style={{ animationDelay: "0.9s" }}>
               <div className="w-full h-[500px] max-w-lg mx-auto rounded-2xl overflow-hidden shadow-2xl">
-                <Spline scene="https://prod.spline.design/cA7xEdNqzMknmEbe/scene.splinecode" />
+                <Spline 
+                  scene="https://prod.spline.design/cA7xEdNqzMknmEbe/scene.splinecode"
+                  onLoad={() => console.log('Spline scene loaded successfully')}
+                  onError={(error) => console.error('Spline scene failed to load:', error)}
+                />
               </div>
             </div>
           </div>
