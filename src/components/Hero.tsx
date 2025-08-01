@@ -146,30 +146,16 @@ const Hero = () => {
           </div>
           
           <div className="w-full lg:w-1/2 relative mt-6 lg:mt-0">
-            {lottieData ? (
-              <div className="relative z-10 animate-fade-in" style={{ animationDelay: "0.9s" }}>
-                <LottieAnimation 
-                  animationPath={lottieData} 
-                  className="w-full h-auto max-w-lg mx-auto"
-                  loop={true}
-                  autoplay={true}
-                />
-              </div>
-            ) : (
-              <>
-              <div className="absolute inset-0 bg-dark-900 rounded-2xl sm:rounded-3xl -z-10 shadow-xl"></div>
-              <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
-                <img 
-                  ref={imageRef} 
-                  src="/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png" 
-                  alt="ZaryahX Robot" 
-                  className="w-full h-auto object-cover transition-transform duration-500 ease-out" 
-                  style={{ transformStyle: 'preserve-3d' }} 
-                />
-                <div className="absolute inset-0" style={{ backgroundImage: 'url("/hero-image.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', mixBlendMode: 'overlay', opacity: 0.5 }}></div>
-              </div>
-              </>
-            )}
+            <div className="relative z-10 animate-fade-in" style={{ animationDelay: "0.9s" }}>
+              <iframe 
+                src="https://prod.spline.design/cA7xEdNqzMknmEbe/scene.splinecode" 
+                frameBorder="0" 
+                width="100%" 
+                height="500"
+                className="w-full h-auto max-w-lg mx-auto rounded-2xl shadow-2xl"
+                style={{ minHeight: '400px' }}
+              />
+            </div>
           </div>
         </div>
       </div>
