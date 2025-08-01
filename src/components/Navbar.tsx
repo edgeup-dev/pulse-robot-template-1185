@@ -57,7 +57,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/b8407fc2-2539-4e3e-a4c7-fb163e5b3327.png" 
             alt="ZaryahX" 
-            className="h-7 sm:h-8" 
+            className="h-9 sm:h-10" 
           />
         </a>
 
