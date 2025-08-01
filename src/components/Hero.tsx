@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import LottieAnimation from "./LottieAnimation";
+import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -147,14 +148,9 @@ const Hero = () => {
           
           <div className="w-full lg:w-1/2 relative mt-6 lg:mt-0">
             <div className="relative z-10 animate-fade-in" style={{ animationDelay: "0.9s" }}>
-              <iframe 
-                src="https://prod.spline.design/cA7xEdNqzMknmEbe/scene.splinecode" 
-                frameBorder="0" 
-                width="100%" 
-                height="500"
-                className="w-full h-auto max-w-lg mx-auto rounded-2xl shadow-2xl"
-                style={{ minHeight: '400px' }}
-              />
+              <div className="w-full h-[500px] max-w-lg mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                <Spline scene="https://prod.spline.design/cA7xEdNqzMknmEbe/scene.splinecode" />
+              </div>
             </div>
           </div>
         </div>
