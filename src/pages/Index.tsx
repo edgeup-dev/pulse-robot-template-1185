@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MiningSection from "@/components/MiningSection";
+import StakingSection from "@/components/StakingSection";
 import VisionSection from "@/components/VisionSection";
 import SpecsSection from "@/components/SpecsSection";
 import Features from "@/components/Features";
@@ -64,6 +65,7 @@ const Index = () => {
       <main className="space-y-4 sm:space-y-8">
         <Hero />
         <MiningSection />
+        <StakingSection />
         <VisionSection />
         <SpecsSection />
         <Features />
