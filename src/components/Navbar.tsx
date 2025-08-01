@@ -56,7 +56,7 @@ const Navbar = () => {
         >
           <img 
             src="/logo.svg" 
-            alt="ZaryahX Logo" 
+            alt="ZaryahX" 
             className="h-7 sm:h-8" 
           />
         </a>
