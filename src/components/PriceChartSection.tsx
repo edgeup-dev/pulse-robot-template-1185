@@ -38,7 +38,7 @@ const PriceChartSection = () => {
     volume: 8500000
   }, {
     date: "Dec 2024",
-    price: 0.005,
+    price: 0.05,
     volume: 9200000
   }];
   const CustomTooltip = ({
@@ -107,7 +107,7 @@ const PriceChartSection = () => {
                 <ArrowUpRight className="h-5 w-5 text-green-500" />
                 <span className="text-sm text-muted-foreground">Growth</span>
               </div>
-              <div className="text-2xl font-bold text-green-500">+92%</div>
+              <div className="text-2xl font-bold text-green-500">+1,823%</div>
             </CardContent>
           </Card>
 
