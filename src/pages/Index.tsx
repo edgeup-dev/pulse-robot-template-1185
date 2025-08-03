@@ -69,7 +69,7 @@ const Index = () => {
         <VisionSection />
         
         <Features />
-        <TechnologySection />
+        
         <WhyZaryahXSection />
         <Newsletter />
         <MadeByHumans />
