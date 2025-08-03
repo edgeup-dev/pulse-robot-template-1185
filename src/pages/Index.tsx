@@ -67,7 +67,7 @@ const Index = () => {
         <UnifiedSection />
         <PriceChartSection />
         <VisionSection />
-        <SpecsSection />
+        
         <Features />
         <TechnologySection />
         <WhyZaryahXSection />
