@@ -87,7 +87,7 @@ const PriceChartSection = () => {
                 <DollarSign className="h-5 w-5 text-primary" />
                 <span className="text-sm text-muted-foreground">Current Price</span>
               </div>
-              <div className="text-2xl font-bold text-primary">$0.005</div>
+              <div className="text-2xl font-bold text-primary">$0.05</div>
             </CardContent>
           </Card>
           
