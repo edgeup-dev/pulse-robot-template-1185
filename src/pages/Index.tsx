@@ -2,9 +2,8 @@
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import MiningSection from "@/components/MiningSection";
-import StakingSection from "@/components/StakingSection";
-import BuyDNZSection from "@/components/BuyDNZSection";
+import UnifiedSection from "@/components/UnifiedSection";
+import PriceChartSection from "@/components/PriceChartSection";
 import VisionSection from "@/components/VisionSection";
 import SpecsSection from "@/components/SpecsSection";
 import Features from "@/components/Features";
@@ -65,9 +64,8 @@ const Index = () => {
       <Navbar />
       <main className="space-y-4 sm:space-y-8">
         <Hero />
-        <MiningSection />
-        <StakingSection />
-        <BuyDNZSection />
+        <UnifiedSection />
+        <PriceChartSection />
         <VisionSection />
         <SpecsSection />
         <Features />
