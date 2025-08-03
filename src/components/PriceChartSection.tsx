@@ -3,39 +3,43 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from "recharts";
 import { TrendingUp, DollarSign, ArrowUpRight, Coins } from "lucide-react";
 const PriceChartSection = () => {
-  // Price data showing progression from $0.004 to $0.05
+  // Price data showing progression from $0.004 to current $0.005
   const priceData = [{
     date: "Jan 2024",
     price: 0.004,
     volume: 1200000
   }, {
     date: "Feb 2024",
-    price: 0.008,
+    price: 0.003,
     volume: 1800000
   }, {
     date: "Mar 2024",
-    price: 0.012,
+    price: 0.0035,
     volume: 2400000
   }, {
     date: "Apr 2024",
-    price: 0.018,
+    price: 0.0032,
     volume: 3200000
   }, {
     date: "May 2024",
-    price: 0.025,
+    price: 0.0028,
     volume: 4100000
   }, {
     date: "Jun 2024",
-    price: 0.032,
+    price: 0.0025,
     volume: 5200000
   }, {
     date: "Jul 2024",
-    price: 0.041,
+    price: 0.0024,
     volume: 6800000
   }, {
     date: "Aug 2024",
-    price: 0.050,
+    price: 0.0026,
     volume: 8500000
+  }, {
+    date: "Dec 2024",
+    price: 0.005,
+    volume: 9200000
   }];
   const CustomTooltip = ({
     active,
@@ -83,7 +87,7 @@ const PriceChartSection = () => {
                 <DollarSign className="h-5 w-5 text-primary" />
                 <span className="text-sm text-muted-foreground">Current Price</span>
               </div>
-              <div className="text-2xl font-bold text-primary">$0.050</div>
+              <div className="text-2xl font-bold text-primary">$0.005</div>
             </CardContent>
           </Card>
           
@@ -103,7 +107,7 @@ const PriceChartSection = () => {
                 <ArrowUpRight className="h-5 w-5 text-green-500" />
                 <span className="text-sm text-muted-foreground">Growth</span>
               </div>
-              <div className="text-2xl font-bold text-green-500">+1,823%</div>
+              <div className="text-2xl font-bold text-green-500">+92%</div>
             </CardContent>
           </Card>
 
@@ -126,7 +130,7 @@ const PriceChartSection = () => {
               DNZ Price History
             </CardTitle>
             <CardDescription>
-              Dinarz token price progression from $0.004 to $0.050 - showing consistent growth and market confidence
+              Dinarz token price progression showing recent growth from $0.0026 to current $0.005 - demonstrating market confidence
             </CardDescription>
           </CardHeader>
           <CardContent>
