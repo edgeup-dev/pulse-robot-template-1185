@@ -2,24 +2,48 @@ import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from "recharts";
 import { TrendingUp, DollarSign, ArrowUpRight, Coins } from "lucide-react";
-
 const PriceChartSection = () => {
   // Price data showing progression from $0.004 to $0.05
-  const priceData = [
-    { date: "Jan 2024", price: 0.004, volume: 1200000 },
-    { date: "Feb 2024", price: 0.008, volume: 1800000 },
-    { date: "Mar 2024", price: 0.012, volume: 2400000 },
-    { date: "Apr 2024", price: 0.018, volume: 3200000 },
-    { date: "May 2024", price: 0.025, volume: 4100000 },
-    { date: "Jun 2024", price: 0.032, volume: 5200000 },
-    { date: "Jul 2024", price: 0.041, volume: 6800000 },
-    { date: "Aug 2024", price: 0.050, volume: 8500000 }
-  ];
-
-  const CustomTooltip = ({ active, payload, label }: any) => {
+  const priceData = [{
+    date: "Jan 2024",
+    price: 0.004,
+    volume: 1200000
+  }, {
+    date: "Feb 2024",
+    price: 0.008,
+    volume: 1800000
+  }, {
+    date: "Mar 2024",
+    price: 0.012,
+    volume: 2400000
+  }, {
+    date: "Apr 2024",
+    price: 0.018,
+    volume: 3200000
+  }, {
+    date: "May 2024",
+    price: 0.025,
+    volume: 4100000
+  }, {
+    date: "Jun 2024",
+    price: 0.032,
+    volume: 5200000
+  }, {
+    date: "Jul 2024",
+    price: 0.041,
+    volume: 6800000
+  }, {
+    date: "Aug 2024",
+    price: 0.050,
+    volume: 8500000
+  }];
+  const CustomTooltip = ({
+    active,
+    payload,
+    label
+  }: any) => {
     if (active && payload && payload.length) {
-      return (
-        <div className="bg-card/95 backdrop-blur-sm border border-border/50 rounded-lg p-3 shadow-lg">
+      return <div className="bg-card/95 backdrop-blur-sm border border-border/50 rounded-lg p-3 shadow-lg">
           <p className="text-sm font-medium text-foreground">{label}</p>
           <p className="text-sm text-primary font-semibold">
             Price: ${payload[0].value.toFixed(3)}
@@ -27,14 +51,11 @@ const PriceChartSection = () => {
           <p className="text-xs text-muted-foreground">
             Volume: {(payload[0].payload.volume / 1000000).toFixed(1)}M
           </p>
-        </div>
-      );
+        </div>;
     }
     return null;
   };
-
-  return (
-    <section className="py-20 px-4 relative overflow-hidden bg-gray-50">
+  return <section className="py-20 px-4 relative overflow-hidden bg-gray-50">
       {/* Background Elements */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
@@ -70,9 +91,9 @@ const PriceChartSection = () => {
             <CardContent className="p-6 text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <TrendingUp className="h-5 w-5 text-green-500" />
-                <span className="text-sm text-muted-foreground">24h Change</span>
+                <span className="text-sm text-muted-foreground">Last Sale Price</span>
               </div>
-              <div className="text-2xl font-bold text-green-500">+12.5%</div>
+              <div className="text-2xl font-bold text-green-500">$0.0026</div>
             </CardContent>
           </Card>
 
@@ -82,7 +103,7 @@ const PriceChartSection = () => {
                 <ArrowUpRight className="h-5 w-5 text-green-500" />
                 <span className="text-sm text-muted-foreground">Growth</span>
               </div>
-              <div className="text-2xl font-bold text-green-500">+1,150%</div>
+              <div className="text-2xl font-bold text-green-500">+1,823%</div>
             </CardContent>
           </Card>
 
@@ -90,9 +111,9 @@ const PriceChartSection = () => {
             <CardContent className="p-6 text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Coins className="h-5 w-5 text-primary" />
-                <span className="text-sm text-muted-foreground">Market Cap</span>
+                <span className="text-sm text-muted-foreground">Total Supply</span>
               </div>
-              <div className="text-2xl font-bold text-primary">$850M</div>
+              <div className="text-2xl font-bold text-primary">100M</div>
             </CardContent>
           </Card>
         </div>
@@ -114,37 +135,21 @@ const PriceChartSection = () => {
                 <AreaChart data={priceData}>
                   <defs>
                     <linearGradient id="priceGradient" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.3}/>
-                      <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0}/>
+                      <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.3} />
+                      <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" opacity={0.3} />
-                  <XAxis 
-                    dataKey="date" 
-                    stroke="hsl(var(--muted-foreground))"
-                    fontSize={12}
-                  />
-                  <YAxis 
-                    stroke="hsl(var(--muted-foreground))"
-                    fontSize={12}
-                    tickFormatter={(value) => `$${value.toFixed(3)}`}
-                  />
+                  <XAxis dataKey="date" stroke="hsl(var(--muted-foreground))" fontSize={12} />
+                  <YAxis stroke="hsl(var(--muted-foreground))" fontSize={12} tickFormatter={value => `$${value.toFixed(3)}`} />
                   <Tooltip content={<CustomTooltip />} />
-                  <Area
-                    type="monotone"
-                    dataKey="price"
-                    stroke="hsl(var(--primary))"
-                    strokeWidth={3}
-                    fill="url(#priceGradient)"
-                  />
+                  <Area type="monotone" dataKey="price" stroke="hsl(var(--primary))" strokeWidth={3} fill="url(#priceGradient)" />
                 </AreaChart>
               </ResponsiveContainer>
             </div>
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PriceChartSection;
